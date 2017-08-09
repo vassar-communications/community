@@ -1,0 +1,104 @@
+<?php 
+namespace gamut; 
+echo 
+    U_DOCTYPE.
+    U_HTML_OPEN.
+    U_HEAD_OPEN;
+?>
+
+
+        
+        <?php 
+            echo U_META; 
+        ?>
+        
+        
+        
+        
+        
+
+        <?php echo U_META_TITLE_OPEN . U_META_TITLE_NON_CMS; ?>                                                                                         
+    Profiles -     <?php echo U_META_TITLE . U_META_TITLE_CLOSE; ?> 
+
+<?php echo U_HEAD; ?>  
+
+
+
+<?php 
+echo 
+    U_HEAD_CLOSE; 
+    flush(); 
+    echo U_BODY_OPEN;
+?>
+
+
+<?php 
+    echo 
+        U_SKIP_LINKS.
+        U_HEADER_OPEN; 
+?>
+
+
+
+<?php echo U_HEADER; ?>
+
+
+
+<?php 
+echo 
+    U_HEADER_CLOSE.
+    U_MAIN_OPEN.
+    U_CONTENT_OPEN.
+    U_NAV_BREADCRUMBS; 
+?>
+                                                                                                    
+        
+<?php echo U_CONTENT_TITLE_OPEN; ?>
+        Profiles
+        <?php echo U_CONTENT_TITLE . U_CONTENT_TITLE_CLOSE; ?>
+    
+
+
+
+
+                            
+
+
+<?php // echo Galleria::getByID ('slideshow-hp')->getSlideshowMarkup(); ?>
+<p>Hello, The text on this page is simply placeholder&#160;copy so the page is not blank. This site was developed for use in training materials related to the college content management system. Curabitur vitae leo at neque placerat consequat. Integer erat odio, ullamcorper faucibus, rutrum eget, varius nec, lorem. Fusce eget nisi eget ante hendrerit ornare. In mi magna, dictum at, consequat ut, viverra sed, tellus. Nunc consectetur nisl quis erat. Suspendisse potenti. Praesent sit amet arcu eget libero rhoncus vehicula. Nunc aliquet lorem. Mauris nec nisi. Ut erat mauris, vehicula luctus, porttitor et, facilisis at, quam. Mauris erat sapien, aliquet eu, eleifend vitae, gravida eu, quam. Suspendisse vulputate suscipit sapien. Donec et ipsum. Fusce et sapien. Curabitur sit amet leo venenatis arcu congue consectetur.</p>
+
+<?php echo CMS_PAGE_CONTENT; ?>
+
+
+            
+
+<?php 
+echo 
+    U_CONTENT_CLOSE.
+    U_ASIDE_OPEN; ?>
+
+
+
+
+
+
+<?php echo U_ASIDE; ?>
+
+
+
+
+
+
+        <?php echo 
+            U_ASIDE_CLOSE .
+            U_MAIN_CLOSE .
+            U_SEARCH .
+            U_NAV .
+            U_FOOTER_OPEN.
+            U_VCARD.
+            U_FOOTER_CLOSE.
+            U_JS_LOCAL.
+            U_BODY_CLOSE.
+            U_HTML_CLOSE;
+        ?>
+        

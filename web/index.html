@@ -1,0 +1,224 @@
+<?php 
+namespace gamut; 
+echo 
+    U_DOCTYPE.
+    U_HTML_OPEN.
+    U_HEAD_OPEN;
+?>
+
+
+        
+        <?php 
+            echo U_META; 
+        ?>
+        
+        
+        
+        
+        
+
+        <?php echo U_META_TITLE_OPEN . U_META_TITLE_NON_CMS; ?>                                     
+<?php echo U_META_TITLE . U_META_TITLE_CLOSE; ?> 
+
+<?php echo U_HEAD; ?>  
+
+
+
+<?php 
+echo 
+    U_HEAD_CLOSE; 
+    flush(); 
+    echo U_BODY_OPEN;
+?>
+
+
+<?php 
+    echo 
+        U_SKIP_LINKS.
+        U_HEADER_OPEN; 
+?>
+
+
+
+<?php echo U_HEADER; ?>
+
+
+
+<?php 
+echo 
+    U_HEADER_CLOSE.
+    U_MAIN_OPEN.
+    U_CONTENT_OPEN.
+    U_NAV_BREADCRUMBS; 
+?>
+                                    
+
+
+
+
+
+
+                
+                            
+
+<?php // echo Galleria::getByID ('slideshow-hp')->getSlideshowMarkup(); ?>
+
+
+<div class="modulesArea">
+            <div class="modulesArea__row modulesArea__row--onecol">
+            
+                            
+                                    
+<div class="Module Module--mainContent Module--fullWidth Module--list list--homePage--announceStoriesNews">
+
+
+<ul class="Module__list">
+<li class="Module__listItem">
+
+
+
+
+<b class="Module__title">FYI</b><b class="Module__desc">Things you ought to know</b>
+
+
+<ul class="Module__subList">
+<li class="Module__listItem">
+<a class="Module__link Module__link--external" href="#">
+<b class="Module__title">Workday Deadline</b><b class="Module__desc">Submit all your Vacation days by May 30</b>
+</a>
+</li>
+<li class="Module__listItem">
+<a class="Module__link Module__link--external" href="#">
+<b class="Module__title">Parking Notice</b><b class="Module__desc">Everyone has to park in South lot beginning May 15</b>
+</a>
+</li>
+<li class="Module__listItem">
+<a class="Module__link Module__link--external" href="#">
+<b class="Module__title">Evaluations</b><b class="Module__desc">Complete your supervisor evaluations by June 13</b>
+</a>
+</li>
+</ul>
+
+</li>
+<li class="Module__listItem">
+
+
+
+
+<b class="Module__title">Our Family</b><b class="Module__desc">The people who make up the Vassar community</b>
+
+
+<ul class="Module__subList">
+<li class="Module__listItem">
+<a class="Module__link Module__link--external" href="https://www.youtube.com/watch?v=fU9lSvZHkMc&amp;index=1&amp;list=PLURusQJONMcr9pEcdTkjwZVBJG5xL04La">
+<b class="Module__title">What are you Doing?</b><b class="Module__desc">Meet Stacy Bingham, director of the Career Development Office, who works tirelessly to help Vassar students and alumnae/i.</b>
+</a>
+</li>
+<li class="Module__listItem">
+<a class="Module__link Module__link--external" href="#">
+<b class="Module__title">Instagram of the day</b><b class="Module__desc">A community submitted photo from around campus. Photo Credit: Jane Doe</b>
+</a>
+</li>
+<li class="Module__listItem">
+<a class="Module__link Module__link--external" href="#">
+<b class="Module__title">Welcome to Campus</b><b class="Module__desc">Take the opportunity to say 'hi' to Marc Newsome when you see him around.</b>
+</a>
+</li>
+</ul>
+
+</li>
+<li class="Module__listItem">
+
+
+
+
+<b class="Module__title">What's Happening</b><b class="Module__desc">Things to do on and off campus </b>
+
+
+<ul class="Module__subList">
+<li class="Module__listItem">
+<a class="Module__link Module__link--external" href="#">
+<b class="Module__title">Art Exhibit: April 21 - July 2</b><b class="Module__desc">In the Light of Naples: The Art of Francesco de Mura</b>
+</a>
+</li>
+<li class="Module__listItem">
+<a class="Module__link Module__link--external" href="#">
+<b class="Module__title">Women's Lacrosse: April 28, 4 pm</b><b class="Module__desc">vs. Clarkson University</b>
+</a>
+</li>
+<li class="Module__listItem">
+<a class="Module__link Module__link--external" href="#">
+<b class="Module__title">Staff Forum: May 24, 9 am</b><b class="Module__desc">Join us in the Villard Room for light refreshments and news</b>
+</a>
+</li>
+</ul>
+
+</li>
+<li class="Module__listItem">
+
+
+
+
+<b class="Module__title">Business Time</b><b class="Module__desc">The tools you need to manage your work life</b>
+
+
+<ul class="Module__subList">
+<li class="Module__listItem">
+<a class="Module__link Module__link--external" href="#">
+<b class="Module__title">Campus Directory</b><b class="Module__desc">Keep in touch with your collegues</b>
+</a>
+</li>
+<li class="Module__listItem">
+<a class="Module__link Module__link--external" href="#">
+<b class="Module__title">Benefits</b><b class="Module__desc">Are you saving enough for retirement?</b>
+</a>
+</li>
+<li class="Module__listItem">
+<a class="Module__link Module__link--external" href="#">
+<b class="Module__title">Room reservations</b><b class="Module__desc">Do you have a room for your next meeting?</b>
+</a>
+</li>
+</ul>
+
+</li>
+</ul>
+</div>
+
+                            </div>
+</div>
+
+<?php echo CMS_PAGE_CONTENT; ?>
+
+
+            
+
+<?php 
+echo 
+    U_CONTENT_CLOSE.
+    U_ASIDE_OPEN; ?>
+
+
+
+
+
+
+<?php echo U_ASIDE; ?>
+
+
+<?php if(!IS_NEWS_INNER){@include("sidebar.html");}?>
+
+
+
+        <?php echo 
+            U_ASIDE_CLOSE .
+            U_MAIN_CLOSE .
+            U_SEARCH .
+            U_NAV .
+            U_FOOTER_OPEN.
+            U_VCARD.
+            U_FOOTER_CLOSE.
+            U_JS_LOCAL.
+            U_BODY_CLOSE.
+            U_HTML_CLOSE;
+        ?>
+        

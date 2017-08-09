@@ -13,11 +13,6 @@
 html {
 	font-family: $sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
-	line-height: 1.1;
-	margin-bottom: .4em;
-	padding-top: .8em;
-}
 .u-lContent h1:nth-of-type(1), .u-lAside h1:nth-of-type(1),
 .u-lContent h2:nth-of-type(1), .u-lAside h2:nth-of-type(1),
 .u-lContent h3:nth-of-type(1), .u-lAside h3:nth-of-type(1),
@@ -25,6 +20,11 @@ h1, h2, h3, h4, h5, h6 {
 .u-lContent h5:nth-of-type(1), .u-lAside h5:nth-of-type(1),
 .u-lContent h6:nth-of-type(1), .u-lAside h6:nth-of-type(1) {
 	padding-top: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.1;
+	margin-bottom: .4em;
+	padding-top: .8em;
 }
 h1 {
 	font-size: 2.44em;
@@ -45,7 +45,7 @@ h6 {
 	font-size: 1em;
 }
 .u-lContent {
-	@include v-pixel-fallback ('font-size', 1.195rem);
+	font-size: initial;
 	font-family: $sans-serif;
 	font-weight: $fontWeightNormal;
 	line-height: 1.2;
@@ -72,13 +72,11 @@ li {
 /* Main page content */
 
 .u-lMain {
-	font-size: 100%;
+	font-size: initial;
 }
-
 .u-pageTitle {
 	margin-top: 0;
 }
-
 /* u-lAside sidebar styles */
 
 .u-lAside {
@@ -106,7 +104,7 @@ li {
 	p,
 	ol,
 	ul {
-		font-size: 1.195em;
+		font-size: initial;
 		font-weight: $fontWeightNormal;
 	}
 
@@ -119,7 +117,7 @@ li {
 
 @media all and (min-width: $tiny) {
 	.u-lMain {
-		font-size: 110%;
+		font-size: initial;
 	}
 	p {
 		line-height: 1.3;
@@ -128,7 +126,7 @@ li {
 		p,
 		ol,
 		ul {
-			font-size: 0.956em;
+			font-size: initial;
 		}
 	}
 }

@@ -1,0 +1,120 @@
+<?php 
+namespace gamut; 
+echo 
+    U_DOCTYPE.
+    U_HTML_OPEN.
+    U_HEAD_OPEN;
+?>
+
+
+        
+        <?php 
+            echo U_META; 
+        ?>
+        
+        
+        
+        
+        
+
+        <?php echo U_META_TITLE_OPEN . U_META_TITLE_NON_CMS; ?>                                                                                         
+    Events -     <?php echo U_META_TITLE . U_META_TITLE_CLOSE; ?> 
+
+<?php echo U_HEAD; ?>  
+
+
+
+<?php 
+echo 
+    U_HEAD_CLOSE; 
+    flush(); 
+    echo U_BODY_OPEN;
+?>
+
+
+<?php 
+    echo 
+        U_SKIP_LINKS.
+        U_HEADER_OPEN; 
+?>
+
+
+
+<?php echo U_HEADER; ?>
+
+
+
+<?php 
+echo 
+    U_HEADER_CLOSE.
+    U_MAIN_OPEN.
+    U_CONTENT_OPEN.
+    U_NAV_BREADCRUMBS; 
+?>
+                                                                                                    
+        
+<?php echo U_CONTENT_TITLE_OPEN; ?>
+        Events
+        <?php echo U_CONTENT_TITLE . U_CONTENT_TITLE_CLOSE; ?>
+    
+
+
+
+
+                            
+
+<ul>
+<li dir="ltr"><span><span class="Apple-tab-span"></span></span><span>forum schedules</span></li>
+<li dir="ltr"><span><span class="Apple-tab-span"></span></span><span>reunion</span></li>
+<li dir="ltr"><span><span class="Apple-tab-span"></span></span><span>team walks/runs</span></li>
+<li dir="ltr"><span><span class="Apple-tab-span"></span></span><span>training</span></li>
+<li dir="ltr"><span><span class="Apple-tab-span"></span></span><span>athletics</span></li>
+<li><span id="docs-internal-guid-ad3095d9-b9ed-ca5e-1065-41640ad6150c"><span><span class="Apple-tab-span"></span></span><span>the usual events</span></span></li>
+</ul>
+<iframe id="vassarMasterCalendar"
+    title="Vassar Master Calendar"
+    width="100%"
+    height="1200px"
+    frameborder="0"
+    scrolling="no"
+    marginheight="0"
+    marginwidth="0"
+    src="https://campuscalendar.vassar.edu/Mastercalendar/">
+</iframe>
+
+
+<?php echo CMS_PAGE_CONTENT; ?>
+
+
+            
+
+<?php 
+echo 
+    U_CONTENT_CLOSE.
+    U_ASIDE_OPEN; ?>
+
+
+
+
+
+
+<?php echo U_ASIDE; ?>
+
+
+
+
+
+
+        <?php echo 
+            U_ASIDE_CLOSE .
+            U_MAIN_CLOSE .
+            U_SEARCH .
+            U_NAV .
+            U_FOOTER_OPEN.
+            U_VCARD.
+            U_FOOTER_CLOSE.
+            U_JS_LOCAL.
+            U_BODY_CLOSE.
+            U_HTML_CLOSE;
+        ?>
+        
