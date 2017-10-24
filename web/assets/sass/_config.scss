@@ -18,7 +18,8 @@ $iconFont: "icons" !important;
 $serif: "raleway";
 $sans-serif: "raleway";
 $fontWeightNormal: 400;
-$fontWeightBold: 700;
+$fontWeightMedium: 500;
+$fontWeightBold: 600;
 
 /*	LAYOUT
 	====== */
@@ -26,8 +27,8 @@ $fontWeightBold: 700;
 /* Site breakpoints */
 
 $tiny: 25em; /* 400px divided by 16px */
-$small: 37.5em; /* 600px divided by 16px */
-$medium: 50em; /* 800px divided by 16px */
+$small: 62.5em; /* 1000px divided by 16px */
+$medium: 62.5em; /* 1000px divided by 16px */
 $large: 62.5em; /* 1000px divided by 16px */
 
 /* The padding on u-lHeader, u-lMain, u-lFooter, and u-NavSite. */
@@ -38,20 +39,23 @@ $layoutContainerPadding--medium: 3%;
 /* COLOR
 	====== */
 
+$greyPantone410: #746661;
+$maroonPresidents: #882344;
+
 /* Basic link colors - these colors also affect the Google Search result link colors */
 
-$linkColor: #3789CC;
-$linkColorHoverFocus: #ED6707;
-$linkColorVisited: #666; /* tint($linkColorVisited, 50%) or shade($linkColorVisited, 50%) can be used to lighten or darken hue */
-$linkColorActive: #cc0000;
-$linkBorderColor: transparent;
+$linkColor: #882344;
+$linkColorHoverFocus: #c1b5b0;
+$linkColorVisited: #746661; /* tint($linkColorVisited, 50%) or shade($linkColorVisited, 50%) can be used to lighten or darken hue */
+$linkColorActive: #746661;
+$linkBorderColor: 882344;
 
-$fontColor: #444;
+$fontColor: #746661;
 
-$html--backgroundColor: transparent;
-$body--backgroundColor: transparent;
-$u-lHeader--backgroundColor: transparent;
-$u-lFooter--backgroundColor: transparent;
+$html--backgroundColor: #fff;
+$body--backgroundColor: #fff;
+$u-lHeader--backgroundColor: #fff;
+$u-lFooter--backgroundColor: $linkColor;
 
 /* MODULES
 	======== */
@@ -128,14 +132,14 @@ $u-NavSite__level--2--mobileFont: $fontWeightNormal 1.4em/1.1 $sans-serif;
 $u-NavSite__level--3--mobileFont: $fontWeightNormal 1em/1.1 $sans-serif;
 $u-NavSite__item--mobilePadding: .25em 0;
 
-$u-NavSite__level--1--font: $fontWeightBold 1.4em/1.1 $sans-serif;
-$u-NavSite__level--2--font: $fontWeightNormal 1.2em/1.1 $sans-serif;
+$u-NavSite__level--1--font: $fontWeightNormal 1.4em/1.1 $sans-serif;
+$u-NavSite__level--2--font: $fontWeightNormal 1em/1.1 $sans-serif;
 $u-NavSite__level--3--font: $fontWeightNormal 1em/1.1 $sans-serif;
 /* level 3 covers Level 3 and up. */
 
 $u-NavSite__level--borderColor: 1px solid #eee;
 
-$mobileMenuBackground: #666;
+$mobileMenuBackground: $greyPantone410;
 
 $mobileMenuLinkColor: #fff;
 $mobileMenuLinkColorHoverFocus: $linkColorHoverFocus;
@@ -172,12 +176,12 @@ $sidebarModule__header--linkColorVisited: $linkColorVisited;
 
 /* News  */
 
-$u-ArticleListItem__title--font: $fontWeightBold 1em $sans-serif;
+$u-ArticleListItem__title--font: $fontWeightBold 1.25em $sans-serif;
 $u-ArticleListItem__title--linkColor: $linkColor;
 $u-ArticleListItem__title--linkColorHoverFocus: $linkColorHoverFocus;
 $u-ArticleListItem__title--linkColorActive: $linkColorActive;
 $u-ArticleListItem__title--linkColorVisited: $linkColorVisited;
-$u-ArticleListItem__summary--font: $fontWeightNormal 1em $sans-serif;
+$u-ArticleListItem__summary--font: $fontWeightNormal inherit $sans-serif;
 $u-ArticleListItem__label--type--font: $fontWeightNormal .85em $sans-serif;
 $u-ArticleListItem__label--dateline__posted--font: $fontWeightNormal .85em $sans-serif;
 $u-ArticleListItem__label--dateline__postedDate--font: $fontWeightNormal .85em $sans-serif;
@@ -188,8 +192,8 @@ $u-ArticleListItem__link--linkColorActive: $linkColorActive;
 $u-ArticleListItem__link--linkColorVisited: $linkColorVisited;
 
 $u-ArticleListItem__summary--color: $fontColor;
-$u-ArticleListItem__summary--colorHoverFocus: $fontColor;
-$u-ArticleListItem__summary--colorActive: $fontColor;
+$u-ArticleListItem__summary--colorHoverFocus: $linkColorHoverFocus;
+$u-ArticleListItem__summary--colorActive: $linkColorActive;
 $u-ArticleListItem__summary--colorVisited: $fontColor;
 
 /* Not sure all these color settings are necessary
@@ -231,22 +235,22 @@ $u-ArticleList__systemMessage--color: #400;
 /*	Mobile search colors
 	-------------------- */
 
-$u-Search__submit--mobileIconColor: #ccc;
-$u-Search__submit--mobileIconColorHoverFocus: #666;
-$u-Search__submit--mobileIconColorActivated: #fff;
+$u-Search__submit--mobileIconColor: $linkColor;
+$u-Search__submit--mobileIconColorHoverFocus: $linkColorHoverFocus;
+$u-Search__submit--mobileIconColorActivated: $linkColorActive;
 
-$u-Search__submit--iconColor: #ccc;
-$u-Search__submit--iconColorHoverFocus: #666;
-$u-Search__submit--iconColorActivated: #fff;
+$u-Search__submit--iconColor: $linkColor;
+$u-Search__submit--iconColorHoverFocus: $linkColorHoverFocus;
+$u-Search__submit--iconColorActivated: $linkColorActive;
 
-$u-Search__submit--mobileBgColor: #444; /* this color needs to match the hard-coded value of the input border found in modules/search.scss */
-$u-Search__submit--bgColor: #666;
-$u-Search__submit--bgColorHoverFocus: #999; 
-$u-Search__submit--bgColorActive: #000;
+$u-Search__submit--mobileBgColor: #fff; /* this color needs to match the hard-coded value of the input border found in modules/search.scss */
+$u-Search__submit--bgColor: #fff;
+$u-Search__submit--bgColorHoverFocus: #fff; 
+$u-Search__submit--bgColorActive: #fff;
 
 $u-Search__field--mobileBgColor: #fff;
-$u-Search__field--bgColor: transparent;
-$mobileSearchBackgroundColor: #000;
+$u-Search__field--bgColor: #fff;
+$mobileSearchBackgroundColor: #fff;
 $searchBackgroundColor: #fff;
 
 $u-Search__field--font: $fontWeightNormal 1em $sans-serif;
@@ -256,7 +260,7 @@ $u-Search__field--placeholderColor: $fontColor;
 $u-Search--borderSize: border-bottom;
 $u-Search--borderSettings: none;
 
-$pointAtWhichSearchMovesToRight: 1040px;
+$pointAtWhichSearchMovesToRight: $small;
 /*	Up until this point, the search box will be positioned
 	over the masthead, so as not to overlap it. This point
 	depends on how wide the site masthead is. Keep increasing it
@@ -265,16 +269,16 @@ $pointAtWhichSearchMovesToRight: 1040px;
 
 /*	Mobile search and menu colors
 	----------------------------- */
-$u-Masthead__vassar--mobileLinkColor: #ccc;
-$u-Masthead__vassar--mobileLinkColorHoverFocus: #666;
-$u-Masthead__vassar--mobileLinkColorActive: #fff;
+$u-Masthead__vassar--mobileLinkColor: $linkColor;
+$u-Masthead__vassar--mobileLinkColorHoverFocus: $linkColorHoverFocus;
+$u-Masthead__vassar--mobileLinkColorActive: $linkColorActive;
 
 $u-Masthead__vassar--linkColor: $linkColor;
 $u-Masthead__vassar--linkColorHoverFocus: $linkColorHoverFocus;
 $u-Masthead__vassar--linkColorActive: $linkColorActive;
 
-$ac-NavAnchor--menuColor: #ccc;
-$ac-NavAnchor--menuColorHoverFocus: #666;
-$ac-NavAnchor--menuColorActive: #fff;
+$ac-NavAnchor--menuColor: $linkColor;
+$ac-NavAnchor--menuColorHoverFocus: $linkColorHoverFocus;
+$ac-NavAnchor--menuColorActive: $linkColorActive;
 
-$searchAndMenuBtnColor: #000;			/* Sets link color for mobile nav close button, that's it */
+$searchAndMenuBtnColor: #fff;			/* Sets link color for mobile nav close button, that's it */
